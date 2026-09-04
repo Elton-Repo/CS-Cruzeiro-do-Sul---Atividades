@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Imagem 1 como fundo do site */
+    background-image: url("https://worlddeer.org/wp-content/uploads/2024/12/blue-whale-Habitat-and-Distribution-1024x702.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Camada escura sobre o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 40, 60, 0.45);
+
+    z-index: -1;
+}
+
+.cartao {
+    width: 800px;
+    height: 450px;
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Segunda imagem */
+.imagem2 {
+    width: 50%;
+    height: 100%;
+}
+
+.imagem2 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Informações */
+.informacoes {
+    width: 50%;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #123b4a;
+}
+
+.informacoes h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.informacoes h2 {
+    font-size: 18px;
+    font-weight: normal;
+
+    color: #287d91;
+
+    margin-bottom: 5px;
+}
+
+.informacoes p {
+    margin-top: 15px;
+
+    font-size: 16px;
+
+    color: #444;
+}
+
+/* Esconde a primeira imagem do HTML,
+   porque ela está sendo usada como background */
+.imagem {
+    display: none;
+}
