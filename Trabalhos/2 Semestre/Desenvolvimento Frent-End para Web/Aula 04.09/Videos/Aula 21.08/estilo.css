@@ -1,0 +1,177 @@
+/*
+Começo
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(110, 231, 231);
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+
+}
+/*
+Cabeçalho
+*/
+
+header{
+    background-color: rgb(193, 221, 247);
+    color: rgb(119, 90, 37);
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+header h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+
+
+}
+
+header p {
+    font-size: 18px;
+
+}
+
+/*
+Menu de Navegação
+*/
+
+nav{
+    background-color: rgb(235, 244, 252);
+    text-align: center;
+    padding: 40px 20px;
+
+}
+nav a{
+    color: rgb(43, 145, 235);
+    text-decoration: center;
+    margin: 0px 16px;
+
+}
+
+/*
+Principal
+*/
+
+main {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+
+}
+
+/*
+Seções
+*/
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px;
+}
+
+section h2 {
+    color: blue;
+    margin-bottom: 20px;
+    border-bottom: 2px;
+    padding-bottom: 10px;
+
+}
+
+/*
+Artigo
+*/
+
+
+section {
+    background-color: rgb(228, 209, 209);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 5px;
+    border-radius: 10px;
+}
+article:last-child{
+    margin-bottom: 5px;
+
+}
+article h3{
+    color: darkblue;
+    margin-bottom: 8px;
+
+}
+article p{
+    color: rgb(5, 5, 51);
+
+}
+
+/*
+Area Complementar
+*/
+aside{
+    background-color: darkorchid;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-left: 5px;
+}
+aside h2{
+    color: rgb(79, 133, 252);
+    margin-bottom: 30px;
+}
+aside ul{
+    margin-bottom: 30px;
+}
+aside li{
+    margin-bottom: 30px;
+}
+/*
+Rodape
+*/
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 30px 20px;
+
+}   
+footer address{
+    font-style: normal;
+    margin-bottom: 15px;
+}
+footer p {
+    font-size: 14px;
+
+}
+
+/*
+Responsividade
+*/
+
+@media(max-width: 600px){
+    header h1{
+        font-size: 28px;
+
+    }
+    nav a {
+        display: block;
+        margin: 8px 0;
+
+    }
+    main {  
+        padding: 0 10px;
+    }
+    aside {
+        padding: 20px;
+    }
+
+}
