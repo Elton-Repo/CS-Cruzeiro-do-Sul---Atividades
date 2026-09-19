@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, rgb(235, 168, 43), rgb(211, 13, 211));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.Calculadora {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
