@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #101010;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    padding-top: 50px;
+
+     background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 8px,
+            rgba(255, 0, 0, 0.3) 9px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 20px,
+            rgba(0, 255, 255, 0.3) 21px
+        ),
+        linear-gradient(
+            135deg,
+            #12002f,
+            #001f3f
+        );
+
+    background-size: 35px 35px;
+    background-position: 0 0, 17px 17px;
+}
+
+h1 {
+    display: inline-block;
+
+    background: #303030;
+    color: #e2e2e2;
+
+    padding: 25px 40px;
+
+    border: 6px solid #61c4bf;
+    border-radius: 30px 60px 15px 60px;
+
+    transform: rotate(-2deg);
+
+    text-shadow:
+        4px 4px #777777,
+        -3px -3px #a8a8a8;
+
+    box-shadow:
+        10px 10px 0 #000000,
+        -10px -10px 0 #000000;
+}
+
+
+/* OS DOIS BOTÕES FICAM LADO A LADO */
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin: 50px 0;
+}
+
+button {
+    width: 1000px;
+    height: 90px;
+
+    border: 5px solid #000;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 1.5s;
+}
+
+
+/* BOTÃO DA SOMA */
+button:first-child {
+    background: #00ff00;
+    color: #ff00ff;
+
+    border-radius: 50% 10% 40% 20%;
+
+    transform: rotate(-5deg);
+
+    box-shadow:
+        8px 8px 0 #ff6600,
+        -5px -5px 0 #00ffff;
+}
+
+
+/* BOTÃO DA MÉDIA */
+button:last-child {
+    background: #ff6600;
+    color: #0000ff;
+
+    border-radius: 10% 50% 20% 40%;
+
+    transform: rotate(5deg);
+
+    box-shadow:
+        -8px 8px 0 #00ff00,
+        5px -5px 0 #ff00ff;
+}
+
+
+/* QUANDO PASSAR O MOUSE */
+button:hover {
+    transform: rotate(0deg) scale(1.1);
+
+    background: #ffff00;
+    color: #ff0000;
+
+    box-shadow:
+        0 0 20px #fff,
+        0 0 40px #ff00ff,
+        0 0 80px #00ffff;
+}
+
+
+/* ÁREA DO RESULTADO */
+section {
+    width: 450px;
+    min-height: 120px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background: #222;
+
+    color: #e2e2e2;
+
+    border: 8px dashed #ff00ff;
+
+    transform: rotate(1deg);
+
+    box-shadow:
+        15px 15px 0 #000000,
+        -10px -10px 0 #000000;
+}
+
+
+/* TEXTO DO RESULTADO */
+section p {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* NÚMEROS DESTACADOS */
+mark {
+    background: #ffff00;
+    color: #ff0000;
+
+    padding: 4px 10px;
+
+    border-radius: 50%;
+
+    box-shadow: 3px 3px 0 #00ffff;
+}
+
+
+/* RESULTADO FINAL */
+strong {
+    background: #8a2be2;
+    color: #00ff00;
+
+    padding: 6px 12px;
+
+    border: 3px solid #fff;
+
+    transform: rotate(-5deg);
+
+    display: inline-block;
+}
