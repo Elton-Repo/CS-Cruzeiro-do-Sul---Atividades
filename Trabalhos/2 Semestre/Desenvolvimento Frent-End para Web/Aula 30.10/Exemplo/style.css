@@ -1,0 +1,67 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #12121c;
+    color: #ffffff;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+/* Título */
+h1 {
+    color: #00bfff;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+/* Botões */
+button {
+    background: #0077cc;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background: #00bfff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00bfff;
+}
+
+/* Resultados */
+p {
+    background: #1e1e2e;
+    border: 1px solid #0077cc;
+    border-radius: 8px;
+
+    padding: 15px;
+    width: 300px;
+
+    text-align: center;
+    font-size: 18px;
+    color: #00d9ff;
+
+    min-height: 50px;
+}
