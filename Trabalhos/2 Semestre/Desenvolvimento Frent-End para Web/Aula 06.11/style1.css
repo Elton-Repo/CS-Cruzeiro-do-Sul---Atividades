@@ -1,0 +1,131 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #12121c;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    background: #1e1e2e;
+    width: 90%;
+    max-width: 420px;
+
+    padding: 35px;
+    border-radius: 15px;
+
+    border: 1px solid #0077cc;
+
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Título */
+h2 {
+    color: #00bfff;
+    text-align: center;
+    font-size: 26px;
+
+    text-shadow: 0 0 10px #00bfff;
+}
+
+/* Label */
+label {
+    font-size: 15px;
+    color: #cccccc;
+}
+
+/* Campo de nota */
+input {
+    width: 100%;
+    padding: 13px;
+
+    background: #12121c;
+    color: white;
+
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Efeito no input */
+input:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.5);
+}
+
+/* Botão */
+button {
+    padding: 13px;
+
+    background: #0077cc;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background: #00bfff;
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px #00bfff;
+}
+
+/* Resultado */
+#resultado {
+    font-size: 22px;
+    text-align: center;
+    min-height: 28px;
+    text-shadow: none;
+}
+
+/* Aprovado */
+.aprovado {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88 !important;
+}
+
+/* Reprovado */
+.reprovado {
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff4444 !important;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

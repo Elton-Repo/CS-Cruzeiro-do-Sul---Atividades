@@ -1,0 +1,95 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #12121c;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+/* Título */
+h1 {
+    color: #00bfff;
+    font-size: 35px;
+    text-shadow: 0 0 12px #00bfff;
+}
+
+/* Campo de nota */
+input {
+    width: 260px;
+    padding: 14px;
+
+    background: #1e1e2e;
+    color: white;
+
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Efeito no campo */
+input:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 12px #00bfff;
+}
+
+/* Botão */
+button {
+    padding: 13px 35px;
+
+    background: #0077cc;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito do botão */
+button:hover {
+    background: #00bfff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00bfff;
+}
+
+/* Resultado */
+h2 {
+    font-size: 26px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* Aluno aprovado */
+.aprovado {
+    color: #00ff88;
+    text-shadow: 0 0 12px #00ff88;
+}
+
+/* Aluno reprovado */
+.reprovado {
+    color: #ff4444;
+    text-shadow: 0 0 12px #ff4444;
+}
